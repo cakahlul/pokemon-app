@@ -33,6 +33,7 @@ export default function Home({ pokemon }: { pokemon: Pokemon[] }) {
           value={filter}
           onChange={e => setFilter(e.target.value)}
           className={styles.search}
+          data-cy="searchBox"
         />
       </div>
       <div className={styles.container}>
