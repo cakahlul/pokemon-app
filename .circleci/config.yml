@@ -16,6 +16,9 @@ jobs:
           name: Build App
           command: yarn build
       - run:
+          name: Testing E2E App
+          command: yarn e2e:headless
+      - run:
           name: Deploy to Netlify
           command: ./node_modules/.bin/netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --prod --dir=.next
 workflows:
