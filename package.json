@@ -6,10 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run",
+    "e2e": "start-server-and-test 'yarn dev' http://localhost:3000 'yarn cypress'",
+    "e2e:headless": "start-server-and-test 'yarn dev' http://localhost:3000 'yarn cypress:headless'"
   },
   "dependencies": {
-    "netlify-cli": "^12.5.0",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -18,8 +21,11 @@
     "@types/node": "18.11.4",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
+    "cypress": "^12.2.0",
     "eslint": "8.26.0",
     "eslint-config-next": "12.3.1",
+    "netlify-cli": "^12.5.0",
+    "start-server-and-test": "^1.15.2",
     "typescript": "4.8.4"
   }
 }
