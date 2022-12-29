@@ -9,8 +9,8 @@
     "lint": "next lint",
     "cypress": "cypress open",
     "cypress:headless": "cypress run",
-    "e2e": "start-server-and-test 'yarn dev' http://localhost:3000 'yarn cypress'",
-    "e2e:headless": "start-server-and-test 'yarn dev' http://localhost:3000 'yarn cypress:headless'"
+    "e2e": "start-server-and-test 'yarn start' http://localhost:3000 'yarn cypress'",
+    "e2e:headless": "start-server-and-test 'yarn start' http://localhost:3000 'yarn cypress:headless'"
   },
   "dependencies": {
     "next": "12.3.1",
